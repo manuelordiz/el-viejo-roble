@@ -1,0 +1,352 @@
+h3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2.5%;
+        font-family: "Baskervville", serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 30px;
+        color: white;
+        text-shadow:  2px 2px 4px grey;
+}
+
+h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3%;
+        font-family: "Baskervville", serif;
+        font-weight: 550;
+        font-style: normal;
+        font-size: 48px;
+        color: #f3ebdb;
+        text-shadow:  2px 2px 4px grey;
+        padding-bottom: 100px;
+}
+
+h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5%;
+        font-family: "Baskervville", serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 30px;
+        color:white;
+        text-shadow:  2px 2px 4px grey;      
+}
+
+
+.btn {
+        padding: 25px 55px;
+        margin-left: 160px;
+        margin-right: 160px;
+        font-size: 24px;
+        color: #9e9a86;
+        text-decoration: none;
+        border-radius: 5px;
+        display: inline-block;
+        cursor: pointer;
+        font-family: "Baskervville", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 26px;
+    }
+
+.btn:hover{
+        color: #cacb82;
+}
+
+.divbtn {
+        display: flex;
+        justify-content: center;
+        align-items: center;     
+        height: 80%;   
+}
+
+.foto{
+        background-image: url("/static/assets/fondo01.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+}
+
+.navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #26440c;
+        padding: 35px 25px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 98%;
+        z-index: 1000;
+        transition: background-color 0.3s ease, padding 0.3s ease;
+}
+
+.navbar.scrolled {
+        padding: 20px 40px;
+        background: rgba(76, 109, 0, 0.9);
+      }
+
+.nav-btn {
+        color: #bebba9;
+        text-decoration: none;
+        margin: 0 20px;
+        font-size: 24px;
+        transition: color 0.3s ease;
+}
+
+.nav-btn:hover {
+        color: #cacb82;
+}
+
+@media (max-width: 768px) {
+        .navbar {
+          flex-direction: column;
+        }
+        .nav-izq,
+        .nav-der {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          margin: 5px 0;
+        }
+}
+
+html, body {
+        margin: 0;
+        padding: 0;
+        font-family:  "Baskervville", serif;
+        box-sizing: border-box;
+        justify-content: center;
+        align-items: center;
+}
+
+.fondo-color{
+        background-color: #f7eedf;
+}
+.texto1{
+        margin-left: 65px;
+        margin-right: 65px;
+        font-family: "Baskervville", serif;
+        font-size: 22px;
+
+}
+.titulo{
+        align-content: center;
+        padding: 20px;
+}
+
+.textoS{
+        flex: 1;
+        text-align: justify;
+        padding: 20px;
+        margin-left: 35px;
+}
+
+.img-bien{
+        flex: 1;
+        text-align: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.img-bien img{
+        width: 500px;
+        height: 500px;
+        object-fit: cover; 
+        border-radius: 8px;
+}
+
+.content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+@media(max-width: 768px) {
+        .content {
+                flex-direction: column;
+                text-align: center;
+            }
+            .text, .image {
+                padding: 10px;
+            }
+}
+
+.container {
+        text-align: center;
+        background: #f7eedf;
+        margin-left: 700px;
+        margin-top: 150px;
+        width: 90%;
+        max-width: 500px;
+        font-family: "Baskervville", serif;
+        font-size: 18px;
+}
+
+form .form-group {
+        margin-bottom: 15px;
+        font-family: "Baskervville", serif;
+}
+
+input, textarea {
+        width: 100%;
+        padding: 8px 0;
+        border: none;
+        border-bottom: 2px solid #f7eedf;
+        background: transparent;
+        font-size: 16px;
+        margin-top: 5px;
+        font-family: "Baskervville", serif;
+}
+    
+input:focus, textarea:focus {
+        outline: none;
+        border-bottom: 2px solid #cacb82; 
+}
+
+ul {
+        list-style: none;
+        padding: 0;
+}
+    
+ul li {
+        margin: 10px 0;
+}
+    
+ul li.success {
+        color: green;
+}
+    
+ul li.error {
+        color: red;
+}
+
+.boton-env{
+        width: 100%;
+        padding: 10px;
+        background-color: #bebba9;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-family: "Baskervville", serif;
+        font-size: 18px;
+}
+
+.boton-env:hover{
+        background-color: #cacb82;
+}
+.contacto{
+        background-color: #f7eedf;
+}
+
+.redes {
+        display: flex;
+        justify-content: left; 
+        align-items: center; 
+        gap: 15px; 
+        margin-top: 50px;    
+        margin-left: 35px;
+}
+    
+    
+.redes img {
+        width: 65px;
+        height: auto;
+}
+
+.irala{
+        animation:tracking-in-expand-forward-top 0.8s linear both} @keyframes tracking-in-expand-forward-top{0%{letter-spacing:-.2em;
+        transform:translateZ(-700px) translateY(-100px);opacity:0}40%{opacity:.6}100%{transform:translateZ(0) translateY(0);
+        opacity:1}
+}
+
+.contenedor-slider {
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;  
+        width: 100%;
+        max-width: 1200px;  
+        margin: 200px auto;  
+        padding: 0 20px;  
+}
+    
+
+.slider {
+        position: relative;
+        flex: 1;  
+        background-color: black;
+        border-radius: 10px;
+        overflow: hidden;
+        max-width: 600px;
+}
+    
+    
+.slides {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+}
+    
+.slides img {
+        max-height: 500px;
+        object-fit: contain;
+        background-color: black;
+}
+    
+    
+.prev, .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        font-size: 24px;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 50%;
+        z-index: 10;
+}
+    
+.prev:hover, .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+}
+    
+.prev {
+        left: 10px;
+}
+    
+.next {
+        right: 10px;
+}
+    
+
+.texto-inst {
+        flex: 1; 
+        text-align: left; 
+        padding: 20px;
+        margin-top: 0;  
+}
+    
+    
+.texto-inst h2 {
+        font-size: 2em;
+        color: blue;
+        margin: 0 0 20px;  
+}
+    
+   
+.texto-inst p {
+        font-size: 1em;
+        line-height: 1.6;
+        color: black;
+}
+    
+    
