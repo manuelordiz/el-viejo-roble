@@ -44,7 +44,7 @@ h2 {
         margin-left: 160px;
         margin-right: 160px;
         font-size: 24px;
-        color: #9e9a86;
+        color: white;
         text-decoration: none;
         border-radius: 5px;
         display: inline-block;
@@ -56,7 +56,7 @@ h2 {
     }
 
 .btn:hover{
-        color: #cacb82;
+        color: lightgray;
 }
 
 .divbtn {
@@ -64,10 +64,11 @@ h2 {
         justify-content: center;
         align-items: center;     
         height: 80%;   
+        
 }
 
 .foto{
-        background-image: url("/static/assets/fondo01.jpg");
+        background-image: url("/static/assets/slider/1.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -104,6 +105,10 @@ h2 {
         color: #cacb82;
 }
 
+.nav-img{
+        cursor: pointer;
+}
+
 @media (max-width: 768px) {
         .navbar {
           flex-direction: column;
@@ -138,18 +143,21 @@ html, body {
 }
 .titulo{
         align-content: center;
-        padding: 20px;
+        color: grey;
+        font-size: 26px;
+        margin-top: 100px;
 }
 
 .textoS{
-        flex: 1;
-        text-align: justify;
+        flex: 2;
+        text-align: center;
         padding: 20px;
         margin-left: 35px;
+        font-size: 20px;
 }
 
 .img-bien{
-        flex: 1;
+        flex: 2;
         text-align: left;
         display: flex;
         justify-content: center;
@@ -157,10 +165,12 @@ html, body {
 }
 
 .img-bien img{
-        width: 500px;
-        height: 500px;
+        width: 550px;
+        height: 550px;
         object-fit: cover; 
         border-radius: 8px;
+        margin-right: 100px;
+       
 }
 
 .content {
@@ -187,7 +197,11 @@ html, body {
         width: 90%;
         max-width: 500px;
         font-family: "Baskervville", serif;
-        font-size: 18px;
+        font-size: 20px;
+}
+
+.container h1{
+        color: grey;
 }
 
 form .form-group {
@@ -265,7 +279,22 @@ ul li.error {
 .irala{
         animation:tracking-in-expand-forward-top 0.8s linear both} @keyframes tracking-in-expand-forward-top{0%{letter-spacing:-.2em;
         transform:translateZ(-700px) translateY(-100px);opacity:0}40%{opacity:.6}100%{transform:translateZ(0) translateY(0);
-        opacity:1}
+        opacity:1};
+}
+
+.viejo-roble{
+        animation:tracking-in-expand-forward-top 1s linear both} @keyframes tracking-in-expand-forward-top{0%{letter-spacing:-.2em;
+        transform:translateZ(-700px) translateY(-100px);opacity:0}40%{opacity:.6}100%{transform:translateZ(0) translateY(0);
+        opacity:1};
+        
+
+}
+
+.casa-campo{
+        animation:tracking-in-expand-forward-top 1.2s linear both} @keyframes tracking-in-expand-forward-top{0%{letter-spacing:-.2em;
+        transform:translateZ(-700px) translateY(-100px);opacity:0}40%{opacity:.6}100%{transform:translateZ(0) translateY(0);
+        opacity:1};
+
 }
 
 .contenedor-slider {
@@ -287,16 +316,25 @@ ul li.error {
         overflow: hidden;
         max-width: 600px;
 }
-    
+
+.slider img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        max-height: 100%;
+}
     
 .slides {
         display: flex;
+        width: 100%;
         transition: transform 0.5s ease-in-out;
 }
     
 .slides img {
-        max-height: 500px;
-        object-fit: contain;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        flex-shrink: 0;
         background-color: black;
 }
     
@@ -333,20 +371,22 @@ ul li.error {
         text-align: left; 
         padding: 20px;
         margin-top: 0;  
+        margin-left: 40px;
 }
     
     
 .texto-inst h2 {
-        font-size: 2em;
-        color: blue;
+        font-size: 26px;
+        color: grey;
         margin: 0 0 20px;  
 }
     
    
 .texto-inst p {
-        font-size: 1em;
+        font-size: 20px;
         line-height: 1.6;
         color: black;
 }
-    
+
+
     

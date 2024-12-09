@@ -4,6 +4,7 @@ from config import mail_user, mail_pass
 
 app = Flask(__name__)
 
+app.config['SECRET_KEY'] = '4c0f868bd718ace06f1c5213619644a4'
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 587   
 app.config['MAIL_USE_TLS'] = True

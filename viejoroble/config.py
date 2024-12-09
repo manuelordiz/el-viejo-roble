@@ -1,2 +1,2 @@
-mail_user = "casadecampoelroble@gamil.com"
-mail_pass = "roble1952"
+mail_user = "casadecampoelroble@gmail.com"
+mail_pass = "sssi pphl awku ngmn"

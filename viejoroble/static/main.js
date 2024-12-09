@@ -21,29 +21,13 @@ const imgSrc = [
     "static/assets/slider/7.jpg",
     "static/assets/slider/8.jpg",
     "static/assets/slider/9.jpg",
-    "static/assets/slider/10.jpg",
     "static/assets/slider/11.jpg",
     "static/assets/slider/12.jpg",
     "static/assets/slider/13.jpg",
     "static/assets/slider/14.jpg",
     "static/assets/slider/15.jpg",
     "static/assets/slider/16.jpg",
-    "static/assets/slider/17.jpg",
-    "static/assets/slider/18.jpg",
-    "static/assets/slider/19.jpg",
-    "static/assets/slider/20.jpg",
-    "static/assets/slider/21.jpg",
-    "static/assets/slider/22.jpg",
-    "static/assets/slider/23.jpg",
-    "static/assets/slider/24.jpg",
-    "static/assets/slider/25.jpg",
-    "static/assets/slider/26.jpg",
-    "static/assets/slider/27.jpg",
-    "static/assets/slider/28.jpg",
-    "static/assets/slider/29.jpg",
-    "static/assets/slider/30.jpg",
-    "static/assets/slider/31.jpg",
-    "static/assets/slider/32.jpg"
+    "static/assets/slider/17.jpg"
 ]
 
 let currentIndex = 0;
@@ -60,7 +44,13 @@ function loadImages() {
 
 function showSlide(index) {
     const slideWidth = slidesContainer.parentElement.clientWidth;
-    slidesContainer.style.transform = `translateX(${-index * slideWidth}px)`;
+        slidesContainer.style.transform = `translateX(${-index * slideWidth}px)`;
+}
+
+function resizeSlider() {
+    const slideWidth = slidesContainer.parentElement.clientWidth;
+    slidesContainer.style.width = `${slideWidth * imgSrc.length}px`;
+    showSlide(currentIndex);
 }
 
 function nextSlide() {
